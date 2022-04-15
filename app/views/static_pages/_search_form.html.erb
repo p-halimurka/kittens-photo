@@ -1,0 +1,8 @@
+<%= form_with(url: "/", method: "get", local:true) do %>
+  <div> 
+    <%= text_field_tag :user_id, nil, placeholder: "User id"%>
+  </div>
+  <div>
+      <%= submit_tag "Show photos", class: "btn btn-outline-dark btn-lg btn-block"%>
+  </div>
+<% end %>

@@ -1,0 +1,6 @@
+<h1>Photos from flickr app</h1>
+
+<%= render "search_form"%>
+<%= @photos.each do |photo| %>
+   <img src="<%= Flickr.url_n(photo) %>"/>
+<% end %>
